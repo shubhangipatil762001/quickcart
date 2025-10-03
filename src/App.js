@@ -14,30 +14,32 @@ import Vivo from "./pages/Vivo";
 import Oppo from "./pages/Oppo";
 import Motorola from "./pages/Motorola";
 import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
+
 
 function App() {
   return (
-    <Router>
-
-      <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/search" element={<Search />} />
-        <Route path="/iphone" element={<Iphone />} />
-        <Route path="Samsung" element={<Samsung />} />
-        <Route path="Oneplus" element={<Oneplus />} />
-        <Route path="xiaomi" element={<Xiaomi />} />
-        <Route path="realme" element={<Realme />} />
-        <Route path="Vivo" element={<Vivo />} />
-        <Route path="Oppo" element={<Oppo />} />
-        <Route path="Motorola" element={<Motorola />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
-
-      </Routes>
-    </Router>
+   
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/iphone" element={<Iphone />} />
+          <Route path="/samsung" element={<Samsung />} />
+          <Route path="/oneplus" element={<Oneplus />} />
+          <Route path="/xiaomi" element={<Xiaomi />} />
+          <Route path="/realme" element={<Realme />} />
+          <Route path="/vivo" element={<Vivo />} />
+          <Route path="/oppo" element={<Oppo />} />
+          <Route path="/motorola" element={<Motorola />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </Router>
+  
   );
 }
 
